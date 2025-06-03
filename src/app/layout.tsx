@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SideNav, SparklingLines } from "./ui-components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <section className="relative min-h-screen bg-gradient-to-br from-black to-gray-800 overflow-hidden">
+          <SparklingLines />
+              <div className="relative flex w-full min-h-screen">
+                <div className="flex rounded-xl shadow-lg w-[100%]">
+                  <section className="md:mr-6"><SideNav/></section>
+                  <section className="mt-12 md:mt-0 pt-10 md:w-full px-6">{children}</section>
+                </div>
+              </div>
+            </section>
       </body>
     </html>
   );
