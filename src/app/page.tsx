@@ -10,7 +10,6 @@ const [searchQuery, setSearchQuery] = useState('');
 const [filteredQuizzes, setFilteredQuizzes] = useState(quizzes);
 
   const handleSearch = (value: string) => {
-    setTimeout
     setSearchQuery(value);
 
     if(searchQuery !==value) {

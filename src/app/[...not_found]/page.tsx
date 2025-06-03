@@ -10,7 +10,7 @@ export default async function NotFoundCatch() {
         </h1>
         <p className="text-2xl text-gray-300 mb-8">Oops! Page Not Found</p>
         <p className="text-gray-400 mb-8 max-w-md">
-          The page you're looking for doesn't exist or has been moved.
+          The page you are looking for does not exist or has been moved.
         </p>
         <Link 
           href="/"

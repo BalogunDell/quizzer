@@ -1,6 +1,7 @@
 
 
 import { QuizCardProps } from "@/app/shared/models";
+import Image from "next/image";
 import Link from "next/link";
 
 export const QuizCard = ({
@@ -23,7 +24,7 @@ export const QuizCard = ({
       <div className="relative min-w-[250px] bg-gray-800/90 rounded-lg p-6 h-full border border-gray-700/50">
         {thumbnail && (
           <div className="flex items-center mb-6">
-            <img 
+            <Image 
               src={thumbnail} 
               alt={title}
               className="h-6 w-6 rounded-full object-cover transform group-hover:scale-110 transition duration-200"

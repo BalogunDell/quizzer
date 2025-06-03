@@ -4,7 +4,7 @@ type NoResultProps = {
   description?: string;
 }
 
-export const NoResult = ({ title = 'No quizzes found', description = "Try adjusting your search terms", className}: NoResultProps) => {
+export const NoResult = ({ title = 'No quizzes found', description = "Try adjusting your search terms" }: NoResultProps) => {
   return (
     <div className="col-span-full flex flex-col items-center justify-center py-10 text-gray-400">
       <svg 
