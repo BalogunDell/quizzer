@@ -1,6 +1,6 @@
-export default async function Page({ params }: { params: { quizSlug: string } }) {
-  const { quizSlug } = (await params);
-  
+export default async function Page({ params }: { params: Promise<{ quizSlug: string }> }) {
+  const { quizSlug } = await params;
+
   return (
     <section>
       <h1>Quiz page</h1>
